@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script>
+        // var a = document.querySelector("#hide");
+        // a.addEventListener("click", function() {
+        //     var b = document.querySelector("p");
+        //     b.remove();
+        // }); //자바 스크립트 문법
+
+        //Jquery
+        $("#hide").click(function() {
+            $("p").hide();
+        });
+        $("#show").click(function() {
+            $("p").show();
+        });
+    </script>
+</body>
+
+</html>

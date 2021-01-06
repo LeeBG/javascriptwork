@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">안녕</div>
+    <div id="box2">안녕2</div>
+
+    <!--onClick은 각자에게 인격이 부여되는 것과 같다-->
+    <!--리스너는 해당 행동을 할때까지 도청하는 것과 같다-->
+    <!-- 요즘은 리스너를 주로 사용한ㄴ다.-->
+    <button id="btn1">클릭1</button>
+    <button id="btn2">클릭2</button>
+    <script>
+        $("#btn1").click(function() {
+            $("#box1").empty(); //안의 내용만 날림
+        });
+
+        $("#btn2").click(function() {
+            $("#box2").remove(); //box2의 공간까지 날려버림
+            //dom element자체를 날리는 것
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>If you click on me, I will disappear.</p>
+    <p class="data">Click me away!</p>
+    <p>Click me too!</p>
+
+    <script>
+        console.log(1, this)
+        $(document).ready(function() { //문서의 body가 다 그려지면
+            $("p").click(function() {
+                $(this).hide();
+                alert("클릭됨");
+            }); //클릭을 하면 함수를 실행하라
+        });
+    </script>
+</body>
+
+</html>
